@@ -13,7 +13,23 @@ public class Earthquake {
         // TODO: Create a series of if/else statements
         // that convert a Richter Scale range to
         // an outcome
-        
+        Scanner in = new Scanner(System.in);
+        double magnitude = in.nextDouble();
+        if (magnitude >= 8.0) {
+            System.out.println("Most buildings fall");
+        }
+        else if(magnitude >= 7.0) {
+            System.out.println("Many buildings fall");
+        }
+        else if(magnitude >= 6.0) {
+            System.out.println("Lots of damage, only some buildings fall");
+        }
+        else if (magnitude >= 4.5) {
+            System.out.println("Only poorly constructed are damaged");
+        }
+        else {
+            System.out.println("A lawn chair falls down");
+        }
         
     }
 }

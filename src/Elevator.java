@@ -11,8 +11,20 @@ public class Elevator {
         Scanner in = new Scanner(System.in);
         System.out.print("What floor button are you? ");
         int floor = in.nextInt();
-        int actualFloor;
+        int actualFloor = -64;
         // TODO: Finish converting to actualFloor
         // and output the result
+        if (floor < 13) {
+            // The true block
+            actualFloor = floor;
+        }
+        else if (floor == 13) {
+            System.out.println("FATAL ERROR.  YOU MAY DIE");
+        }
+        else {
+            // The false block
+            actualFloor = floor-1;
+        }
+        System.out.println("The actual floor is " + actualFloor);
     }
 }

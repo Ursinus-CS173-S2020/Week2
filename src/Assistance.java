@@ -15,7 +15,9 @@ public class Assistance {
         System.out.print("Enter your age: ");
         int age = in.nextInt();
         System.out.print("Enter how sick you feel on a scale from 1 to 10: ");
-        int sick = in.nextInt();
-        
+        int sick = in.nextInt();    
+        if (age >= 75 || sick > 6) {
+            System.out.println("Assist");
+        }
     }
 }
