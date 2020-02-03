@@ -18,10 +18,10 @@ public class Earthquake {
         if (richter >= 8.0) {
             System.out.println("Every building collapses");
         }
-        else if (richter >= 7.0) {
+        if (richter >= 7.0) {
             System.out.println("Many buildings fall");
         }
-        else if (richter >= 6.0) {
+        if (richter >= 6.0) {
             System.out.println("Many bldgs damaged, a few collapse");
         }
         else if (richter < 6.0) {

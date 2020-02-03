@@ -10,9 +10,21 @@ public class Elevator {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("What floor button are you? ");
-        int floor = in.nextInt();
-        int actualFloor;
-        // TODO: Finish converting to actualFloor
-        // and output the result
+        int floor = in.nextInt(); // Input variable
+        int actualFloor = 0; // Output variable
+        if (floor > 13) {
+            actualFloor = floor - 1;
+        }
+        else if (floor == 13) {
+            System.out.println("FATAL ERROR! DEATH IMMINENT");
+        }
+        else { // Otherwise
+            actualFloor = floor;
+        }
+        
+        
+        if (floor < 13 || floor > 13) {
+            System.out.println("Actual Floor is " + actualFloor);
+        }
     }
 }
