@@ -10,6 +10,32 @@ public class RecklessDriving {
      */
     public static String assessDriving(int speedLimit, int speed) {
         String message = "";
+        
+        if (speedLimit <= 65) {
+            if (speed > speedLimit + 15) {
+                message = "Reckless";
+            }
+            else {
+                message = "OK";
+            }
+        }
+        else if (speedLimit <= 80) {
+            if (speed > 80) {
+                message = "Reckless";
+            }
+            else {
+                message = "OK";
+            }
+        }
+        else {
+            if (speed > 100) {
+                message = "Reckless";
+            }
+            else {
+                message = "OK";
+            }
+        }
+        
         return message;
     }
     
@@ -20,5 +46,17 @@ public class RecklessDriving {
         speed = 65;
         System.out.print("Doing " + speed + " in a " + speedLimit + ": ");
         System.out.println(assessDriving(speedLimit, speed));
+    
+        speedLimit = 70;
+        speed = 83;
+        System.out.print("Doing " + speed + " in a " + speedLimit + ": ");
+        System.out.println(assessDriving(speedLimit, speed));
+
+        speedLimit = 55;
+        speed = 71;
+        System.out.print("Doing " + speed + " in a " + speedLimit + ": ");
+        System.out.println(assessDriving(speedLimit, speed));
+        
+        
     }
 }

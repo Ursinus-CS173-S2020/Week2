@@ -13,5 +13,12 @@ public class Temperature {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("What's the temperature outside? ");
+        int temp = in.nextInt();
+        if (! (temp <= 80 && temp >= 60) ) {
+            System.out.println("I'll go outside!");
+        }
+        else {
+            System.out.println("I'll stay inside");
+        }
     }
 }
