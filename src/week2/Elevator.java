@@ -1,3 +1,4 @@
+package week2;
 /**
  * 
  * Purpose: To convert the floor button number

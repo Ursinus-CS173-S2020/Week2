@@ -1,3 +1,4 @@
+package week2;
 /**
  * Purpose: To demonstrate the OR (||) statement
  * If someone is more than 75 years old OR

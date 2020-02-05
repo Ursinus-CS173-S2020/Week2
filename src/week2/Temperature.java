@@ -1,3 +1,4 @@
+package week2;
 /**
  * Purpose: To demonstrate AND (&&) conditions
  * in Java with a little program to print out
