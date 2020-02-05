@@ -1,9 +1,12 @@
 package week2;
 
+/**
+ * This is the example we went over in class
+ */
 
 public class BooleanStatements {
     public static boolean myBooleanStatement(boolean a, boolean b) {
-        boolean result = a && b;
+        boolean result = a && b || !a;
         return result;
     }
     
